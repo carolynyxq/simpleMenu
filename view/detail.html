@@ -1,0 +1,21 @@
+<!--详情页-->
+<topheader></topheader>
+
+<div id="foodDetail" class="main">
+  <div class="container">
+    <ul class="breadcrumb">
+      <li><a href="#/start">首页</a></li>
+      <li>制作详情</li>
+    </ul>
+    <hr/>
+    <div class="img-lg">
+      <h2 class="text-center">{{food.name}}</h2>
+      <img class="img-responsive center-block" id="foodImg" src="img/{{food.img_lg}}"/>
+    </div>
+    <div class="info center-block">
+      <p><strong>健康功效：</strong>{{food.effect}}</p>
+      <p><strong>主要材料：</strong>{{food.material}}</p>
+      <p><strong>制作过程：</strong><br/>{{food.detail}}</p>
+    </div>
+  </div>
+</div>

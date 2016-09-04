@@ -1,0 +1,13 @@
+angular.module("myAnimate",['ngAnimate'])
+    .animation('.box',function(){
+      return{
+        enter:function(e,fn){
+          $(e).css('opacity',0);
+          $(e).animate({opacity:1},3000,fn);
+        },
+        leave:function(e,fn){
+          $(e).css('opacity',1);
+          $(e).animate({opacity:0},2000,fn);
+        }
+      }
+    });
