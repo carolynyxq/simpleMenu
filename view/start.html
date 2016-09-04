@@ -1,0 +1,28 @@
+<!--首页-->
+<div id="menuAll">
+  <topheader></topheader>
+  <div class="main">
+    <div class="container">
+      <h2>快速检索：</h2>
+      <div class="form-group has-feedback" id="searchFood">
+        <label class="control-label sr-only" for="food">输入要搜索菜谱的关键字</label>
+        <input class="form-control" id="food" type="text" name="food" placeholder="菜谱名称"/>
+        <span class="glyphicon glyphicon-search form-control-feedback"></span>
+      </div>
+      <div class="list-group" id="searchPop"></div>
+      <!--读取data中foodlist的数据并显示在网页上-->
+      <div class="row clearfix">
+        <div class="col-md-3 col-sm-4 col-xs-6" ng-repeat="food in list" >
+          <a href="#/detail/{{food.id}}">
+            <img class="img-responsive" src="img/{{food.img}}" title="{{food.name}}" alt="{{food.name}}"/>
+          </a>
+          <p><a class="titleS" href="#/detail/{{food.id}}" ng-bind="food.name"></a></p>
+        </div>
+      </div>
+      <button class="btn btn-info btn-block" ng-click="showmore()" type="button">
+        <span>加载更多</span>
+      </button>
+  </div>
+  </div>
+</div>
+<script src="app/search.js"></script>

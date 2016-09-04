@@ -1,0 +1,9 @@
+<!--读取data中foodlist的数据并显示在网页上-->
+<div class="row">
+  <div class="col-md-3 col-xs-6" ng-repeat="food in searchList" >
+    <a href="#/detail/{{food.id}}">
+      <img class="img-responsive" src="img/{{food.img}}" title="{{food.name}}" alt="{{food.name}}"/>
+    </a>
+    <p><a class="titleS" href="#/detail/{{food.id}}" ng-bind="food.name"></a></p>
+  </div>
+</div>

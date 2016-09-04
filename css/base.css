@@ -1,0 +1,60 @@
+body {
+  background: #fff;
+}
+body .main {
+  margin-top: 50px;
+}
+body .main .row {
+  text-align: center;
+}
+body .main .row p {
+  margin: 10px 0 15px 0;
+}
+body .main .row p .titleS {
+  font-size: 18px;
+  color: #993300;
+}
+body .main .row p .titleS:hover {
+  text-decoration: none;
+  background: #993300;
+  color: #fff;
+}
+body .breadcrumb {
+  background: none;
+  padding: 20px 0 0 0;
+  font-size: 18px;
+}
+body .img-lg #foodImg {
+  display: block;
+}
+body .info {
+  background: lightgray;
+  max-width: 600px;
+}
+body .info p {
+  padding: 10px 0;
+  margin: 0;
+  font-size: 1.25em;
+  line-height: 1.6em;
+}
+@media (max-width: 768px) {
+  body .img-lg h2 {
+    font-size: 1.8em;
+  }
+}
+@media (max-width: 300px) {
+  body .img-lg h2 {
+    font-size: 1.25em;
+  }
+}
+body #searchFood {
+  z-index: 10;
+}
+body #food {
+  border-radius: 0;
+}
+body #searchPop {
+  position: relative;
+  top: -22px;
+  z-index: 1;
+}
